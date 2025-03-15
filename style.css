@@ -1,0 +1,162 @@
+/* Global */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; /* Add this to ensure padding is included in element dimensions */
+}
+
+html {
+    background-color: #F4EFE6;
+    font-size: 14px;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    padding: 32px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: auto; /* Add this to handle content if it still overflows */
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    width: 56px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 0;
+    border-radius: 50%;
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+button#start:active,
+button#pause:active {
+    background-color: #FAC539;
+}
+
+/* Fonts */
+
+p {
+    color: #5C464D;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.080rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#dish-count {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+h1 {
+    color: #5C464D;
+    font-family: "DotGothic16", sans-serif;
+    font-size: 6rem;
+    font-weight: 0.4rem;
+    letter-spacing: 5.6px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Elements */
+.graphic {
+    width: 480px;
+    height: auto;
+    position: relative;
+    margin: 32px  0 0 0;
+}
+
+.graphic img {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.ingredient-img {
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.avatar {
+    width: 48px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.timer-message p {
+    display: flex;
+    padding: 10px 20px;
+    align-items: flex-start;
+    border-radius: 10px;
+    border: 2px solid rgba(229, 135, 27, 0.30);
+    background: #FFEFC8;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.timer-message {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+}
+
+button img {
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: auto;
+}
+
+
+button#start,
+button#pause {
+    background: #FFD95F;
+    box-shadow: 0px 3px 0px 0px #EDBB31;
+    box-sizing: border-box;
+
+}
+
+
+button#reset:disabled {
+    opacity: 0.5;
+}
+
+.dish {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.button-bar {
+    display: flex;
+    width: 480px;
+    padding: 8px 32px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 500px;
+    background: #FFF;
+
+}

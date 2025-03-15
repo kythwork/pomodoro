@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DotGothic16&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Pomodoro Timer</title>
+</head>
+
+<body>
+    <main class="container">
+        <header class="timer-message">
+            <div class="avatar">
+            </div>
+            <p></p>
+        </header>
+        <section class="timer-graphic">
+            <!-- Timer -->
+            <div class="timer">
+                <h1 id="minutes">00</h1>
+                <h1>:</h1>
+                <h1 id="seconds">30</h1>
+            </div>
+            <!-- Main Graphic -->
+            <div class="graphic">
+                <div class="ingredient-img">
+                    <img class="dish" src="assets/tomato.svg" alt="" srcset="">
+                </div>
+                <!-- Plate img -->
+                <img class="plate" src="assets/plate.svg" alt="" srcset="">
+            </div>
+        </section>
+        <!-- Button Bar -->
+        <nav class="button-bar">
+            <div class="dish">
+                <img src="assets/icon-dish.svg" alt="" srcset="">
+                <p id="dish-count">0</p>
+            </div>
+            <button id="start">
+                <img src="assets/icon-play.svg" alt="" srcset="">
+            </button>
+            <button id="pause">
+                <img src="assets/icon-pause.svg" alt="" srcset="">
+            </button>
+            <button id="reset">
+                <img src="assets/icon-reset.svg" alt="" srcset="">
+            </button>
+        </nav>
+    </main>
+
+
+    <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"></script>
+
+</body>
+
+</html>
